@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "eslint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
@@ -20,6 +21,15 @@
   },
   "homepage": "https://github.com/BardAlexandrovskiy/counter#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "redux": "^4.0.5"
   }
 }
