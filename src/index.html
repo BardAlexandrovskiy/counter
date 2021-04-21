@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter</title>
     <script src="./index.js"></script>
-    <link rel="stylesheet" href="./custom.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/index.scss" />
   </head>
-  <body>
+  <body class="dark">
     <header class="header">
       <div class="container">
-        <div class="title">Redux</div>
+        <div class="header-content-wrapper">
+          <h1 class="title">Redux</h1>
+          <button class="button" id="change-theme-button">Change theme</button>
+        </div>
       </div>
     </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-content-wrapper">
+          <div class="counter">Counter: <span id="counter-value"></span></div>
+          <div class="buttons-wrapper">
+            <button class="button add" id="add">Add 1</button>
+            <button class="button subtract" id="subtract">Subtract 1</button>
+            <button class="button async" id="async">Async</button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

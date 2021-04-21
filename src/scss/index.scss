@@ -1,0 +1,53 @@
+// Fonts
+$main-font: 'Roboto', sans-serif;
+
+// Color for light theme
+$text-dark: black;
+$border-dark: darkgray;
+$background-dark: black;
+
+// Colors for dark theme
+$text-light: white;
+$border-light: lightgray;
+$background-light: white;
+
+// CSS reset
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+.container {
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: darkcyan;
+  font-family: $main-font;
+  color: $text-light;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Themes
+@import './light-theme';
+@import './dark-theme';

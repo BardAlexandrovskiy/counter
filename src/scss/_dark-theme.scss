@@ -1,0 +1,21 @@
+body.dark {
+  background-color: #0e0e0f;
+
+  // Header
+  .header {
+    .header-content-wrapper {
+      .title {
+        color: $text-light;
+      }
+    }
+  }
+
+  // Main
+  .main {
+    .main-content-wrapper {
+      .counter {
+        color: $text-light;
+      }
+    }
+  }
+}
